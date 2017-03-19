@@ -1,0 +1,76 @@
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #242424;
+}
+
+#wrapper {
+	width: 100%;
+}
+
+.box {
+	width: 100%;
+	height: 700px;
+}
+
+#first-page {
+	background-color: #B5D68E
+}
+
+#second-page {
+	background-color: #EAA52C
+}
+
+#third-page {
+	background-color: #188EBA
+}
+
+#fourh-page {
+	background-color: #8318BA
+}
+
+#fifth-page {
+	background-color: #CCC;
+}
+
+nav {
+	background-color: #C5C5C5;
+	position: fixed;
+	top: 30px;
+	right: 10px;
+}
+
+nav ul li a {
+	width: 20px;
+	height: 20px;
+	display: block;
+	background-color: #EDEDED;
+	border-radius: 80px;
+}
+
+nav ul li:first-child a {
+	background-color: gray;
+}
+
+nav ul {
+	padding: 5px;
+}
+
+nav ul li:not(:last-child) a {
+	margin-bottom: 10px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<title>Scroll One Page</title>
+	<link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+	<script src="assets/js/jquery.min.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<nav>
+			<ul>
+				<li><a href="#" class="item"></a></li>
+				<li><a href="#" class="item"></a></li>
+				<li><a href="#" class="item"></a></li>
+				<li><a href="#" class="item"></a></li>
+				<li><a href="#" class="item"></a></li>
+			</ul>
+		</nav>
+		<div id="first-page" class="box"></div>
+		<div id="second-page" class="box"></div>
+		<div id="third-page" class="box"></div>
+		<div id="fourh-page" class="box"></div>
+		<div id="fifth-page" class="box"></div>
+	</div>
+	<script src="assets/js/jquery.scrollOnePage.js"></script>
+
+	<script>
+		
+		$(document).on('ready', function () {
+
+			/**
+			 * ----------------------------------------------------------------------
+			 * First I must select the element that covers the entire DOM of my page.
+			   In this case I am selecting the '#wrapper'.
+			 *
+			 *
+			 * Then I select the class that contains each section of my page.
+			   It is important that the class is the same for all sections.
+			   In this case I am using the '.box' class.
+			 *
+			 *
+			 * Finally I select the navigation bar elements to be marked or colored
+			   and these must also have the same class. In this case it is called ".item".
+			 * ---------------------------------------------------------------------------
+			*/
+
+			$('#wrapper').scrollOnePage('.box', '.item');
+
+		});
+
+	</script>
+</body>
+</html>
